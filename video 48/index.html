@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height: 500px;
+            width: 1000px;
+            background-color: blanchedalmond;
+            position: relative;
+        }
+
+        .ball{
+            height: 100px;
+            width: 100px;
+            border-radius: 70px;
+            background-color: red;
+            position: absolute;
+            bottom: 0px;
+            left: 0px;
+            animation: bounce 1s linear infinite alternate-reverse,
+            xbounce 5s linear infinite;  
+        }
+
+        @keyframes bounce{
+            from{
+                transform: translateY(10px);
+            }
+            to{
+                transform: translateY(-200px);
+            }
+        }
+        @keyframes xbounce {
+            from{
+            
+        }
+            to{
+                transform: translateX(500px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="ball"></div>
+    </div>
+</body>
+</html>

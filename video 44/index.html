@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>design the grid</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+
+        }
+        .container{
+            display: grid;
+            grid-auto-flow: row dense;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 10px;
+
+        }
+        .item{
+            width: 100px;
+            height: 100px;
+            background-color: aliceblue;
+        }
+
+        .btn{
+            background-color: blanchedalmond;
+            border: 2px solid;
+            width: 20px;
+            text-align: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            <div class="btn"></div>
+        </div>
+        <div class="item">
+            <div class="btn"></div>
+        </div>
+        <div class="item">
+            <div class="btn"></div>
+        </div>
+        <div class="item">
+            <div class="btn"></div>
+        </div>
+        <div class="item">
+            <div class="btn"></div>
+        </div>
+        <div class="item">
+            <div class="btn"></div>
+        </div>
+        <div class="item">
+            <div class="btn"></div>
+        </div>
+        <div class="item">
+            <div class="btn"></div>
+        </div>
+        <div class="item">
+            <div class="btn"></div>
+        </div>
+    </div>
+</body>
+</html>
